@@ -1,0 +1,15 @@
+DEFINE NOME GIT: git config --global user.name "Nome Identificador GIT" 
+DEFINE EMAIL GIT: git config --global user.email "email@gmail.com"
+DEFINE O EDITOR USADO: git config --global core.editor Intellij IDEA
+INICIAR REPOSITORIO: git init (inicializa um repositorio vazio)
+VERIFICAR OQUE FOI ADICIONADO,MODIFICADO, DELETADO: git status
+ADICIONAR TODOS OS ARQUIVOS NO GIT: git add -A
+ADICIONAR TODOS OS ARQUIVO NO GIT: git add <filename>
+
+
+WINDOWS COMANDO
+LISTAR CONTEUDOS DE UMA PASTA: dir ou tree /f
+
+BRANT: (Versões diferentes do sistema)
+MASTER: VERSÃO PRINCIPAL DO SISTEMA 
+COMMIT: É enviar as modificações feitas acompanhado de um comentário
