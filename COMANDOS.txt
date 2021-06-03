@@ -4,12 +4,45 @@ DEFINE O EDITOR USADO: git config --global core.editor Intellij IDEA
 INICIAR REPOSITORIO: git init (inicializa um repositorio vazio)
 VERIFICAR OQUE FOI ADICIONADO,MODIFICADO, DELETADO: git status
 ADICIONAR TODOS OS ARQUIVOS NO GIT: git add -A
-ADICIONAR TODOS OS ARQUIVO NO GIT: git add <filename>
+ADICIONAR ARQUIVO NO GIT: git add <filename>
+LISTAR TODOS OS COMMITS FEITOS: git log
+LISTAR O BRNACH QUE ESTA NO MOMENTO: git branch
+ENVIAR MODIFICAÇÕES + COMENTÁRIO: git commit -m "Meu comentário"
+ENVIAR MODIFICAÇÕES + COMENTÁRIO E ADD NO GIT: git commit -am "Meu comentário"
+VOLTAR P/ COMMIT ANTERIOR E MANTER ALTERAÇÕES: git reset -soft 5bbabfb37df7d45757a1791458d087bcef52de90
+VOLTAR P/ COMMIT ANTERIOR SEM MANTER ALTERAÇÕES: git reset -hard 5bbabfb37df7d45757a1791458d087bcef52de90 (NÃO RECOMENDADO EM TRABALHO EM EQUIPE!!!!)
+CRIANDO BRANCH: git branch <nome do branch>
+TROCANDO O BRANCH: git checkout <branch name>
+MOSTRAR TODAS MODIFICAÇÔES FEITAS NO ARQUIVO: git diff
+MOSTRAR OS ARQUIVOS ALTERADOS: git diff --name-only
+MOSTRAR ALTERAÇÂO FEITA NO ARQUIVO: git diff <file name>
+VOLTAR MODIFICAÇÔES DE UM ARQUIVO: git checkout HEAD -- <file name>
+
+****** GIT REMOTE ********
+ENVIAR DADOS LOCAIS PARA O REMOTO: git push -u origin master
+PUCHAR OS DADOS SALVOS NO REMOTO PARA O LOCAL: git fetch -u origin master
 
 
 WINDOWS COMANDO
 LISTAR CONTEUDOS DE UMA PASTA: dir ou tree /f
 
-BRANT: (Versões diferentes do sistema)
+BRANCH: (Versões diferentes do sistema)
 MASTER: VERSÃO PRINCIPAL DO SISTEMA 
 COMMIT: É enviar as modificações feitas acompanhado de um comentário
+
+BRANCHS PRICIPAIS
+• BRANCH MASTER (Continua sendo utilizada para enviar os commits dos releases para produção)
+• BRANCH DEVELOP (Ela conterá todas as novas features estáves mergiadas posteriormente e uma branch de release)
+
+BRANCHS DE SUPORTE
+• FEATURE (Sempre será criada a partir de DEVELOP e voltará via merge e depois poderá ser removida)
+• RELEASE (Prepara a feature para a produção). Se estiver pronta de ir para master, será necessário criar uma tag/indicação que conterá a nova versão do projeto
+• HOTFIX (Lida com bugs/problemas "emergenciais". Após solucionado, é aplicado uma nova tag de versionamento e enviado para a master)
+
+OBS: A cada feature criada uma nova branch é criada
+
+******* TÉCNICAS DE MEMORIZAÇÃO ********
+1° Escrever no papel
+2º Depois de 10mins relaxar o corpo(deitar) e relembrar o que foi escrito no cadarno
+
+
