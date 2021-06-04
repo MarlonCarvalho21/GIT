@@ -9,8 +9,9 @@ LISTAR TODOS OS COMMITS FEITOS: git log
 LISTAR O BRNACH QUE ESTA NO MOMENTO: git branch
 ENVIAR MODIFICAÇÕES + COMENTÁRIO: git commit -m "Meu comentário"
 ENVIAR MODIFICAÇÕES + COMENTÁRIO E ADD NO GIT: git commit -am "Meu comentário"
-VOLTAR P/ COMMIT ANTERIOR E MANTER ALTERAÇÕES: git reset -soft 5bbabfb37df7d45757a1791458d087bcef52de90
-VOLTAR P/ COMMIT ANTERIOR SEM MANTER ALTERAÇÕES: git reset -hard 5bbabfb37df7d45757a1791458d087bcef52de90 (NÃO RECOMENDADO EM TRABALHO EM EQUIPE!!!!)
+VOLTAR P/ COMMIT ANTERIOR E MANTER ALTERAÇÕES: git reset --soft (hash do commit anterior) 5bbabfb37df7d45757a1791458d087bcef52de90 (Voltar para o commit anterior mas com as modificações alteradas)
+VOLTAR P/ COMMIT ANTERIOR E MANTER ALTERAÇÕES: git reset --mixed (hash do commit anterior) 5bbabfb37df7d45757a1791458d087bcef52de90 (Voltar para o commit anterior mas com as modificações alteradas, mas terá que add novamente)
+VOLTAR P/ COMMIT ANTERIOR SEM MANTER ALTERAÇÕES: git reset --hard (hash do commit anterior) 5bbabfb37df7d45757a1791458d087bcef52de90 (NÃO RECOMENDADO EM TRABALHO EM EQUIPE!!!!)
 CRIANDO BRANCH: git branch <nome do branch>
 TROCANDO O BRANCH: git checkout <branch name>
 MOSTRAR TODAS MODIFICAÇÔES FEITAS NO ARQUIVO: git diff
@@ -19,6 +20,9 @@ MOSTRAR ALTERAÇÂO FEITA NO ARQUIVO: git diff <file name>
 VOLTAR MODIFICAÇÔES DE UM ARQUIVO: git checkout HEAD -- <file name>
 
 ****** GIT REMOTE ********
+VERIFICAR SE TEM UMA ORIGIN ADICIONADA: git remote + (-v mais detalhes)
+
+SINCRONIZAR GIT LOCAL COM O REMOTO: git remote origin <url repositório>
 ENVIAR DADOS LOCAIS PARA O REMOTO: git push -u origin master
 PUCHAR OS DADOS SALVOS NO REMOTO PARA O LOCAL: git fetch -u origin master
 
